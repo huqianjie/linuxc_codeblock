@@ -83,13 +83,11 @@ write_leb:   if(write(client_socket, &buf,1) != 1)
             wait(NULL);
             printf("[DEBUG] parent close the client socket now\n");
             close(client_socket);
-            printf("[DEBUG] 22222222222222\n");
         }
         else
         {
             //fork error
         }
-    printf("[DEBUG] 333333333333333333\n");
     }
 finish:
     if(listen_socket != -1)
